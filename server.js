@@ -190,18 +190,23 @@ async function handleContactApi(request, response) {
 
 function routeStaticFile(requestUrl, response) {
   const routeMap = {
-    "/": "pages/portfolio.html",
-    "/projects": "pages/projects/index.html",
-    "/projects/web": "pages/projects/web.html",
-    "/projects/python": "pages/projects/python.html",
-    "/projects/java": "pages/projects/java.html",
-    "/projects/telegram": "pages/projects/telegram.html",
-    "/portfillo.html": "pages/portfolio.html",
-    "/index.html": "pages/projects/index.html",
-    "/web.html": "pages/projects/web.html",
-    "/python.html": "pages/projects/python.html",
-    "/java.html": "pages/projects/java.html",
-    "/telegram.html": "pages/projects/telegram.html"
+    "/": "index.html",
+    "/projects": "projects/index.html",
+    "/projects/index.html": "projects/index.html",
+    "/projects/web": "projects/web.html",
+    "/projects/web.html": "projects/web.html",
+    "/projects/python": "projects/python.html",
+    "/projects/python.html": "projects/python.html",
+    "/projects/java": "projects/java.html",
+    "/projects/java.html": "projects/java.html",
+    "/projects/telegram": "projects/telegram.html",
+    "/projects/telegram.html": "projects/telegram.html",
+    "/portfillo.html": "index.html",
+    "/index.html": "index.html",
+    "/web.html": "projects/web.html",
+    "/python.html": "projects/python.html",
+    "/java.html": "projects/java.html",
+    "/telegram.html": "projects/telegram.html"
   };
 
   const mappedFile = routeMap[requestUrl.pathname];
@@ -252,5 +257,7 @@ const server = http.createServer(async (request, response) => {
 server.listen(PORT, () => {
   console.log(`Portfolio server is running on http://localhost:${PORT}`);
 });
+
+
 
 
