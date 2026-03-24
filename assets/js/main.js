@@ -173,7 +173,7 @@ function buildProjectCard(project) {
 
 async function loadPortfolioData() {
   try {
-    const projectsPayload = await fetchJson(["/api/projects", "data/projects.json"]);
+    const projectsPayload = await fetchJson(["/api/projects", "/data/projects.json"]);
     const projects = Array.isArray(projectsPayload) ? projectsPayload : projectsPayload.projects || [];
     const featuredProjects = projects.filter((project) => project.featured).slice(0, 3);
     const categoryCount = new Set(projects.map((project) => project.category)).size;
@@ -243,3 +243,4 @@ async function handleFormSubmit(event) {
 form?.addEventListener("submit", handleFormSubmit);
 
 loadPortfolioData();
+

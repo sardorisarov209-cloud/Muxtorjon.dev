@@ -190,12 +190,18 @@ async function handleContactApi(request, response) {
 
 function routeStaticFile(requestUrl, response) {
   const routeMap = {
-    "/": "portfillo.html",
-    "/projects": "index.html",
-    "/projects/web": "web.html",
-    "/projects/python": "python.html",
-    "/projects/java": "java.html",
-    "/projects/telegram": "telegram.html"
+    "/": "pages/portfolio.html",
+    "/projects": "pages/projects/index.html",
+    "/projects/web": "pages/projects/web.html",
+    "/projects/python": "pages/projects/python.html",
+    "/projects/java": "pages/projects/java.html",
+    "/projects/telegram": "pages/projects/telegram.html",
+    "/portfillo.html": "pages/portfolio.html",
+    "/index.html": "pages/projects/index.html",
+    "/web.html": "pages/projects/web.html",
+    "/python.html": "pages/projects/python.html",
+    "/java.html": "pages/projects/java.html",
+    "/telegram.html": "pages/projects/telegram.html"
   };
 
   const mappedFile = routeMap[requestUrl.pathname];
@@ -246,3 +252,5 @@ const server = http.createServer(async (request, response) => {
 server.listen(PORT, () => {
   console.log(`Portfolio server is running on http://localhost:${PORT}`);
 });
+
+

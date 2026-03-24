@@ -148,7 +148,7 @@ function renderProjects() {
 
 async function loadProjects() {
   try {
-    const payload = await fetchJson(["/api/projects", "data/projects.json"]);
+    const payload = await fetchJson(["/api/projects", "/data/projects.json"]);
     allProjects = Array.isArray(payload) ? payload : payload.projects || [];
     renderProjects();
   } catch (error) {
@@ -175,3 +175,4 @@ if (yearElement) {
 }
 
 loadProjects();
+

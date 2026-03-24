@@ -1,93 +1,134 @@
 [
-  {
-    "id": "ebook-landing",
-    "title": "E-book Landing Page",
-    "category": "web",
-    "image": "rasm.png",
-    "summary": "Responsive promo landing page built around a clean CTA flow and simple product presentation.",
-    "stack": ["HTML", "CSS", "Bootstrap"],
-    "tutorial": "https://youtu.be/GQOIaizx_mE",
-    "demo": "https://sardorisarov209-tech.github.io/Ebook/",
-    "repo": "https://github.com/sardorisarov209-tech/Ebook",
-    "featured": true,
-    "status": "Live"
-  },
-  {
-    "id": "calculator-js",
-    "title": "HTML CSS JS Calculator",
-    "category": "web",
-    "image": "rasm1.png",
-    "summary": "Interactive calculator with button logic, responsive layout, and beginner-friendly JavaScript structure.",
-    "stack": ["HTML", "CSS", "JavaScript"],
-    "tutorial": "https://youtu.be/sBJmRD7kNTk?si=7AmX0qY08_LXFz7H",
-    "demo": "https://calculator-muxtorjon.kesug.com/CalcAI.html?i=1",
-    "repo": "https://github.com/sardorisarov209-tech/Calculator-muxtor",
-    "featured": true,
-    "status": "Live"
-  },
-  {
-    "id": "calculator-python",
-    "title": "Python Calculator",
-    "category": "python",
-    "image": "rasm2.png",
-    "summary": "Practice project focused on arithmetic logic, command flow, and problem-solving with Python.",
-    "stack": ["Python", "CLI Logic"],
-    "tutorial": "",
-    "demo": "",
-    "repo": "",
-    "featured": false,
-    "status": "In progress"
-  },
-  {
-    "id": "signin-form",
-    "title": "Sign In Form",
-    "category": "web",
-    "image": "rasm3.png",
-    "summary": "Clean authentication UI concept with polished spacing, form states, and compact layout.",
-    "stack": ["HTML", "CSS"],
-    "tutorial": "",
-    "demo": "https://sardorisarov209-tech.github.io/Sign-in/signin.html",
-    "repo": "https://github.com/sardorisarov209-tech/Sign-in",
-    "featured": true,
-    "status": "Live"
-  },
-  {
-    "id": "love-calculator",
-    "title": "Love Calculator",
-    "category": "web",
-    "image": "rasm4.jpg",
-    "summary": "Fun browser experiment with playful interaction, score generation, and lightweight UI animation.",
-    "stack": ["HTML", "CSS", "JavaScript"],
-    "tutorial": "https://www.youtube.com/watch?v=gkby8r-3soc",
-    "demo": "https://sardorisarov209-tech.github.io/love-calculator/",
-    "repo": "https://github.com/sardorisarov209-tech/love-calculator",
-    "featured": false,
-    "status": "Live"
-  },
-  {
-    "id": "java-showcase",
-    "title": "Java Practice Showcase",
-    "category": "java",
-    "image": "work6.png",
-    "summary": "Placeholder section prepared for upcoming Java projects, OOP exercises, and console applications.",
-    "stack": ["Java", "OOP"],
-    "tutorial": "",
-    "demo": "",
-    "repo": "",
-    "featured": false,
-    "status": "Coming soon"
-  },
-  {
-    "id": "telegram-bot",
-    "title": "Telegram Bot Concept",
-    "category": "telegram",
-    "image": "work7.png",
-    "summary": "Reserved slot for Telegram bot work, automation experiments, and useful chat-based tools.",
-    "stack": ["Bot API", "Automation"],
-    "tutorial": "",
-    "demo": "",
-    "repo": "",
-    "featured": false,
-    "status": "Coming soon"
-  }
+    {
+        "id":  "ebook-landing",
+        "title":  "E-book Landing Page",
+        "category":  "web",
+        "image":  "/assets/images/rasm.png",
+        "summary":  "Responsive promo landing page built around a clean CTA flow and simple product presentation.",
+        "stack":  [
+                      "HTML",
+                      "CSS",
+                      "Bootstrap"
+                  ],
+        "tutorial":  "https://youtu.be/GQOIaizx_mE",
+        "demo":  "https://sardorisarov209-tech.github.io/Ebook/",
+        "repo":  "https://github.com/sardorisarov209-tech/Ebook",
+        "featured":  true,
+        "status":  "Live"
+    },
+    {
+        "id":  "calculator-js",
+        "title":  "HTML CSS JS Calculator",
+        "category":  "web",
+        "image":  "/assets/images/rasm1.png",
+        "summary":  "Interactive calculator with button logic, responsive layout, and beginner-friendly JavaScript structure.",
+        "stack":  [
+                      "HTML",
+                      "CSS",
+                      "JavaScript"
+                  ],
+        "tutorial":  "https://youtu.be/sBJmRD7kNTk?si=7AmX0qY08_LXFz7H",
+        "demo":  "https://calculator-muxtorjon.kesug.com/CalcAI.html?i=1",
+        "repo":  "https://github.com/sardorisarov209-tech/Calculator-muxtor",
+        "featured":  true,
+        "status":  "Live"
+    },
+    {
+        "id":  "calculator-python",
+        "title":  "Python Calculator",
+        "category":  "python",
+        "image":  "/assets/images/rasm2.png",
+        "summary":  "Practice project focused on arithmetic logic, command flow, and problem-solving with Python.",
+        "stack":  [
+                      "Python",
+                      "CLI Logic"
+                  ],
+        "tutorial":  "",
+        "demo":  "",
+        "repo":  "",
+        "featured":  false,
+        "status":  "In progress"
+    },
+    {
+        "id":  "signin-form",
+        "title":  "Sign In Form",
+        "category":  "web",
+        "image":  "/assets/images/rasm3.png",
+        "summary":  "Clean authentication UI concept with polished spacing, form states, and compact layout.",
+        "stack":  [
+                      "HTML",
+                      "CSS"
+                  ],
+        "tutorial":  "",
+        "demo":  "https://sardorisarov209-tech.github.io/Sign-in/signin.html",
+        "repo":  "https://github.com/sardorisarov209-tech/Sign-in",
+        "featured":  true,
+        "status":  "Live"
+    },
+    {
+        "id":  "love-calculator",
+        "title":  "Love Calculator",
+        "category":  "web",
+        "image":  "/assets/images/rasm4.jpg",
+        "summary":  "Fun browser experiment with playful interaction, score generation, and lightweight UI animation.",
+        "stack":  [
+                      "HTML",
+                      "CSS",
+                      "JavaScript"
+                  ],
+        "tutorial":  "https://www.youtube.com/watch?v=gkby8r-3soc",
+        "demo":  "https://sardorisarov209-tech.github.io/love-calculator/",
+        "repo":  "https://github.com/sardorisarov209-tech/love-calculator",
+        "featured":  false,
+        "status":  "Live"
+    },
+    {
+        "id":  "java-showcase",
+        "title":  "Java Practice Showcase",
+        "category":  "java",
+        "image":  "/assets/images/work6.png",
+        "summary":  "Placeholder section prepared for upcoming Java projects, OOP exercises, and console applications.",
+        "stack":  [
+                      "Java",
+                      "OOP"
+                  ],
+        "tutorial":  "",
+        "demo":  "",
+        "repo":  "",
+        "featured":  false,
+        "status":  "Coming soon"
+    },
+    {
+        "id":  "telegram-bot",
+        "title":  "Telegram Bot Concept",
+        "category":  "telegram",
+        "image":  "/assets/images/work7.png",
+        "summary":  "Reserved slot for Telegram bot work, automation experiments, and useful chat-based tools.",
+        "stack":  [
+                      "Bot API",
+                      "Automation"
+                  ],
+        "tutorial":  "",
+        "demo":  "",
+        "repo":  "",
+        "featured":  false,
+        "status":  "Coming soon"
+    },
+    {
+        "id":  "demo-showcase-project",
+        "title":  "Demo Showcase Project",
+        "category":  "web",
+        "image":  "/assets/images/work1.png",
+        "summary":  "Sample project card added to verify that new entries from projects.json appear automatically in the portfolio.",
+        "stack":  [
+                      "HTML",
+                      "CSS",
+                      "JavaScript"
+                  ],
+        "tutorial":  "",
+        "demo":  "",
+        "repo":  "",
+        "featured":  false,
+        "status":  "Draft"
+    }
 ]
