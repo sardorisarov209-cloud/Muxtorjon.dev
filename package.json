@@ -1,0 +1,10 @@
+{
+  "name": "muxtorjon-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Full-stack portfolio with a simple Node.js backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
