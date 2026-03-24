@@ -113,22 +113,5 @@
         "repo":  "",
         "featured":  false,
         "status":  "Coming soon"
-    },
-    {
-        "id":  "demo-showcase-project",
-        "title":  "Demo Showcase Project",
-        "category":  "web",
-        "image":  "/assets/images/work1.png",
-        "summary":  "Sample project card added to verify that new entries from projects.json appear automatically in the portfolio.",
-        "stack":  [
-                      "HTML",
-                      "CSS",
-                      "JavaScript"
-                  ],
-        "tutorial":  "",
-        "demo":  "",
-        "repo":  "",
-        "featured":  false,
-        "status":  "Draft"
     }
 ]

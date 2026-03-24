@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Muxtorjon portfolio built with a simple main HTML, CSS and JavaScript structure.">
+    <meta name="description" content="Muxtorjon portfolio with a clean main HTML, CSS and JavaScript structure.">
     <title>Muxtorjon | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="/style.css">
+    <script defer src="/main.js"></script>
   </head>
   <body>
     <div class="page-noise" aria-hidden="true"></div>
@@ -31,7 +31,7 @@
           <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
+          <a href="/projects.html">Projects</a>
           <a href="#contact">Contact</a>
         </nav>
       </div>
@@ -41,15 +41,15 @@
       <section class="section hero" id="home">
         <div class="container hero-grid">
           <div class="hero-copy reveal">
-            <p class="eyebrow">Main HTML, CSS and JavaScript</p>
-            <h1>Simple portfolio frontend, cleaner structure, and easier editing.</h1>
+            <p class="eyebrow">Portfolio home</p>
+            <h1>Portfolio alohida, projectlar esa o'zining maxsus sahifasida.</h1>
             <p class="hero-text">
-              The main frontend is now centered around one <strong>index.html</strong>, one <strong>style.css</strong>,
-              and one <strong>main.js</strong>. Project cards still load from JSON data, while the backend remains optional.
+              Asosiy sahifa endi sizning tanishtiruv, skill va aloqa qismlaringiz uchun ishlaydi. Barcha
+              projectlar esa bitta alohida sahifada boshqariladi, qidiriladi va filter qilinadi.
             </p>
 
             <div class="hero-actions">
-              <a class="button button-primary" href="#projects">See projects</a>
+              <a class="button button-primary" href="/projects.html">Open projects page</a>
               <a class="button button-secondary" href="#contact">Contact me</a>
             </div>
 
@@ -71,15 +71,15 @@
 
           <div class="hero-visual reveal">
             <div class="portrait-card">
-              <img src="assets/images/perfil.png" alt="Portrait of Muxtorjon">
+              <img src="/assets/images/perfil.png" alt="Portrait of Muxtorjon">
             </div>
 
             <div class="floating-panel">
               <p class="floating-label">Current setup</p>
               <ul>
-                <li>One main HTML file</li>
-                <li>One main CSS file</li>
-                <li>One main JavaScript file</li>
+                <li>Portfolio in one main page</li>
+                <li>Projects on a separate page</li>
+                <li>Still powered by one CSS and one JS file</li>
               </ul>
             </div>
           </div>
@@ -89,36 +89,36 @@
       <section class="section about" id="about">
         <div class="container section-heading reveal">
           <p class="eyebrow">About</p>
-          <h2>Frontend first, but still ready for backend support when needed.</h2>
+          <h2>Simple structure, easier updates, and cleaner navigation.</h2>
         </div>
 
         <div class="container about-grid">
           <div class="about-media reveal">
-            <img src="assets/images/prefil.png" alt="Profile photo of Muxtorjon">
+            <img src="/assets/images/prefil.png" alt="Profile photo of Muxtorjon">
           </div>
 
           <div class="about-copy reveal">
             <p>
-              This version is easier to manage because the main UI is no longer split across many frontend files.
-              You can now change the design, layout, or interaction logic from the root HTML, CSS, and JS files.
+              Bu tuzilma bilan portfolio va project katalogi bir-biriga aralashmaydi. Siz portfolio dizaynini
+              alohida, projectlar ro'yxatini esa alohida boshqarishingiz mumkin.
             </p>
             <p>
-              Project data still comes from <strong>data/projects.json</strong>, so adding new work stays simple without
-              rewriting the layout every time.
+              Project ma'lumotlari hamon <strong>data/projects.json</strong> ichida saqlanadi, shuning uchun yangi
+              ish qo'shish jarayoni osonligicha qoladi.
             </p>
 
             <div class="about-points">
               <article>
+                <h3>Clean portfolio</h3>
+                <p>Asosiy sahifa faqat sizni tanishtiradi.</p>
+              </article>
+              <article>
+                <h3>Separate projects</h3>
+                <p>Barcha ishlar alohida sahifada ko'rsatiladi.</p>
+              </article>
+              <article>
                 <h3>Easy editing</h3>
-                <p>Main page structure lives in one HTML file.</p>
-              </article>
-              <article>
-                <h3>Easy styling</h3>
-                <p>All main styles are collected in one CSS file.</p>
-              </article>
-              <article>
-                <h3>Easy logic</h3>
-                <p>Filtering, rendering, and form behavior live in one JS file.</p>
+                <p>Frontend hanuz asosiy 3 faylda boshqariladi.</p>
               </article>
             </div>
           </div>
@@ -128,7 +128,7 @@
       <section class="section skills" id="skills">
         <div class="container section-heading reveal">
           <p class="eyebrow">Skills</p>
-          <h2>Tools and strengths behind the builds in this portfolio.</h2>
+          <h2>Tools and strengths behind the work you show.</h2>
         </div>
 
         <div class="container skills-grid">
@@ -167,62 +167,33 @@
           </div>
 
           <aside class="skills-card reveal">
-            <p class="skills-card__eyebrow">Project data</p>
-            <h3>How new projects are added now</h3>
+            <p class="skills-card__eyebrow">Projects page</p>
+            <h3>How the separate project page works</h3>
             <ul class="skills-bullets">
-              <li>Add a new image to <strong>assets/images</strong></li>
-              <li>Add a new object to <strong>data/projects.json</strong></li>
-              <li>The frontend renders it automatically</li>
+              <li>All projects load from <strong>data/projects.json</strong></li>
+              <li>Filter and search live in the dedicated projects page</li>
+              <li>Portfolio stays focused on personal branding</li>
             </ul>
           </aside>
         </div>
       </section>
 
-      <section class="section work" id="work">
-        <div class="container section-heading reveal">
-          <p class="eyebrow">Featured work</p>
-          <h2>Highlighted projects from the portfolio data source.</h2>
-        </div>
-
+      <section class="section preview-section" id="projects-preview">
         <div class="container">
-          <div class="project-grid" id="featured-projects">
-            <article class="empty-card">Loading featured projects...</article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section projects-section" id="projects">
-        <div class="container section-heading reveal">
-          <p class="eyebrow">Project explorer</p>
-          <h2>All projects in one place with filter and search.</h2>
-        </div>
-
-        <div class="container project-browser reveal">
-          <div class="browser-tools">
-            <div class="filter-pills">
-              <button class="pill is-active" type="button" data-filter="all">All</button>
-              <button class="pill" type="button" data-filter="web">Web</button>
-              <button class="pill" type="button" data-filter="python">Python</button>
-              <button class="pill" type="button" data-filter="java">Java</button>
-              <button class="pill" type="button" data-filter="telegram">Telegram</button>
-            </div>
-
-            <label class="search-field">
-              <span>Search projects</span>
-              <input type="search" data-search placeholder="Search by name, stack, or status">
-            </label>
-          </div>
-
-          <div class="projects-summary">
+          <div class="preview-panel reveal">
             <div>
-              <p class="eyebrow">Filtered results</p>
-              <h3 data-result-title>All projects</h3>
+              <p class="eyebrow">Projects page</p>
+              <h2>Projectlar endi portfolio ichida emas, alohida sahifada turadi.</h2>
+              <p>
+                Alohida sahifada barcha worklaringizni filter, qidiruv va kartalar bilan ko'rish mumkin. Portfolio
+                esa toza va ixcham ko'rinishda qoladi.
+              </p>
             </div>
-            <p><strong data-visible-count>0</strong> matching projects</p>
-          </div>
 
-          <div class="projects-grid" id="all-projects-grid">
-            <article class="empty-card">Loading projects...</article>
+            <div class="preview-actions">
+              <a class="button button-primary" href="/projects.html">Go to projects</a>
+              <a class="button button-secondary" href="#contact">Ask for a website</a>
+            </div>
           </div>
         </div>
       </section>
@@ -231,7 +202,7 @@
         <div class="container contact-grid">
           <div class="contact-copy reveal">
             <p class="eyebrow">Contact</p>
-            <h2>Send project details from the same main page.</h2>
+            <h2>Send project details from the portfolio page.</h2>
             <p>
               If the Node backend is running, this form will save messages. If not, the page still works as a static
               frontend and tells you that backend mode is offline.
@@ -243,8 +214,8 @@
                 <strong>sardorisarov209-tech</strong>
               </a>
               <div class="contact-card">
-                <span class="contact-card__title">Data source</span>
-                <strong>data/projects.json</strong>
+                <span class="contact-card__title">Projects page</span>
+                <strong>/projects.html</strong>
               </div>
               <div class="contact-card">
                 <span class="contact-card__title">API status</span>
