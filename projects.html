@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Muxtorjon loyihalar sahifasi, filter va qidiruv bilan.">
+    <title>Muxtorjon | Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <script defer src="/main.js"></script>
+  </head>
+  <body data-page="projects">
+    <div class="page-noise" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="/index.html#top">
+          <span class="brand-mark">M</span>
+          <span>Muxtorjon.dev</span>
+        </a>
+
+        <nav class="site-nav" id="site-nav">
+          <a href="/index.html#home" data-i18n="nav.portfolio">Portfolio</a>
+          <a href="/index.html#about" data-i18n="nav.about">Men haqimda</a>
+          <a href="/projects.html" data-i18n="nav.projects">Loyihalar</a>
+          <a href="#browse" data-i18n="nav.browse">Ko'rish</a>
+          <a href="/index.html#contact" data-i18n="nav.contact">Aloqa</a>
+        </nav>
+
+        <div class="header-controls">
+          <label class="language-switcher">
+            <span class="sr-only" data-i18n="controls.language">Til</span>
+            <select id="language-switcher" aria-label="Tilni tanlang">
+              <option value="uz" data-i18n="controls.langUz">O'zbek</option>
+              <option value="en" data-i18n="controls.langEn">English</option>
+              <option value="ru" data-i18n="controls.langRu">Русский</option>
+            </select>
+          </label>
+
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Temani almashtirish">
+            <span data-theme-label>Theme: Dark</span>
+          </button>
+        </div>
+
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section page-hero" id="home">
+        <div class="container page-hero__grid">
+          <div class="page-hero__copy reveal">
+            <p class="eyebrow" data-i18n="projects.heroEyebrow">Alohida loyihalar sahifasi</p>
+            <h1 data-i18n="projects.heroTitle">Barcha loyihalaringiz bitta maxsus sahifada.</h1>
+            <p class="hero-text" data-i18n="projects.heroText">
+              Bu sahifa faqat loyihalar uchun. Bu yerda featured kartalar, category filterlar va qidiruv bir joyda ishlaydi.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#browse" data-i18n="projects.heroPrimary">Loyihalarni ko'rish</a>
+              <a class="button button-secondary" href="/index.html#contact" data-i18n="projects.heroSecondary">Loyiha boshlash</a>
+            </div>
+          </div>
+
+          <div class="page-hero__stats reveal">
+            <article class="metric-card">
+              <span class="metric-number" data-count-key="projects">0</span>
+              <p data-i18n="metrics.projects">Jami loyihalar</p>
+            </article>
+            <article class="metric-card">
+              <span class="metric-number" data-count-key="categories">0</span>
+              <p data-i18n="metrics.categories">Loyiha kategoriyalari</p>
+            </article>
+            <article class="metric-card">
+              <span class="metric-number" data-count-key="featured">0</span>
+              <p data-i18n="metrics.featured">Tanlangan loyihalar</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section work" id="featured">
+        <div class="container section-heading reveal">
+          <p class="eyebrow" data-i18n="projects.featuredEyebrow">Tanlangan ishlar</p>
+          <h2 data-i18n="projects.featuredTitle">Ma'lumotlar manbasidan ajratib ko'rsatilgan loyihalar.</h2>
+        </div>
+
+        <div class="container">
+          <div class="project-grid" id="featured-projects">
+            <article class="empty-card" data-i18n="projects.loadingFeatured">Tanlangan loyihalar yuklanmoqda...</article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="browse">
+        <div class="container section-heading reveal">
+          <p class="eyebrow" data-i18n="projects.explorerEyebrow">Loyiha ko'ruvchi</p>
+          <h2 data-i18n="projects.explorerTitle">Barcha loyihalarni filter va qidiruv orqali ko'ring.</h2>
+        </div>
+
+        <div class="container project-browser reveal">
+          <div class="browser-tools">
+            <div class="filter-pills">
+              <button class="pill is-active" type="button" data-filter="all" data-i18n="filters.all">Barchasi</button>
+              <button class="pill" type="button" data-filter="web" data-i18n="filters.web">Web</button>
+              <button class="pill" type="button" data-filter="python" data-i18n="filters.python">Python</button>
+              <button class="pill" type="button" data-filter="java" data-i18n="filters.java">Java</button>
+              <button class="pill" type="button" data-filter="telegram" data-i18n="filters.telegram">Telegram</button>
+            </div>
+
+            <label class="search-field">
+              <span data-i18n="projects.searchLabel">Loyihalarni qidirish</span>
+              <input type="search" data-search placeholder="Nomi, texnologiyasi yoki status bo'yicha qidiring" data-i18n-placeholder="projects.searchPlaceholder">
+            </label>
+          </div>
+
+          <div class="projects-summary">
+            <div>
+              <p class="eyebrow" data-i18n="projects.filteredEyebrow">Filtrlangan natijalar</p>
+              <h3 data-result-title>Barchasi</h3>
+            </div>
+            <p><strong data-visible-count>0</strong> <span data-i18n="projects.matchingProjects">mos loyiha</span></p>
+          </div>
+
+          <div class="projects-grid" id="all-projects-grid">
+            <article class="empty-card" data-i18n="projects.loadingAll">Loyihalar yuklanmoqda...</article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section preview-section">
+        <div class="container">
+          <div class="preview-panel reveal">
+            <div>
+              <p class="eyebrow" data-i18n="projects.backEyebrow">Portfolio'ga qaytish</p>
+              <h2 data-i18n="projects.backTitle">Portfolio sahifasi alohida, aloqa esa o'sha yerda qoladi.</h2>
+              <p data-i18n="projects.backText">
+                Agar mijoz yoki mehmon siz haqingizda o'qimoqchi bo'lsa, portfolio sahifaga qaytadi. Ishlaringizni ko'rmoqchi
+                bo'lsa, shu maxsus sahifada qoladi.
+              </p>
+            </div>
+
+            <div class="preview-actions">
+              <a class="button button-primary" href="/index.html" data-i18n="projects.backPrimary">Portfolio'ni ochish</a>
+              <a class="button button-secondary" href="/index.html#contact" data-i18n="projects.backSecondary">Aloqa bo'limi</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>Muxtorjon.dev</p>
+        <p data-i18n="projects.footerPage">Loyihalar sahifasi: projects.html</p>
+        <p>&copy; <span id="year"></span> <span data-i18n="footer.rights">Barcha huquqlar himoyalangan.</span></p>
+      </div>
+    </footer>
+  </body>
+</html>
