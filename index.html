@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Muxtorjon portfolio sayti, sodda HTML, CSS va JavaScript tuzilmasida yaratilgan.">
+    <title>Muxtorjon | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <script defer src="/main.js"></script>
+  </head>
+  <body data-page="home">
+    <div class="page-noise" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="#top">
+          <span class="brand-mark">M</span>
+          <span>Muxtorjon.dev</span>
+        </a>
+
+        <nav class="site-nav" id="site-nav">
+          <a href="#home" data-i18n="nav.home">Bosh sahifa</a>
+          <a href="#about" data-i18n="nav.about">Men haqimda</a>
+          <a href="#skills" data-i18n="nav.skills">Ko'nikmalar</a>
+          <a href="/projects.html" data-i18n="nav.projects">Loyihalar</a>
+          <a href="#contact" data-i18n="nav.contact">Aloqa</a>
+        </nav>
+
+        <div class="header-controls">
+          <label class="language-switcher">
+            <span class="sr-only" data-i18n="controls.language">Til</span>
+            <select id="language-switcher" aria-label="Tilni tanlang">
+              <option value="uz" data-i18n="controls.langUz">O'zbek</option>
+              <option value="en" data-i18n="controls.langEn">English</option>
+              <option value="ru" data-i18n="controls.langRu">Русский</option>
+            </select>
+          </label>
+
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Temani almashtirish">
+            <span data-theme-label>Theme: Dark</span>
+          </button>
+        </div>
+
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section hero" id="home">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow" data-i18n="home.heroEyebrow">Portfolio bosh sahifasi</p>
+            <h1 data-i18n="home.heroTitle">Portfolio alohida, loyihalar esa o'zining maxsus sahifasida.</h1>
+            <p class="hero-text" data-i18n="home.heroText">
+              Asosiy sahifa endi sizning tanishtiruv, skill va aloqa qismlaringiz uchun ishlaydi. Barcha
+              loyihalar esa bitta alohida sahifada boshqariladi, qidiriladi va filter qilinadi.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="/projects.html" data-i18n="home.heroPrimary">Loyihalar sahifasini ochish</a>
+              <a class="button button-secondary" href="#contact" data-i18n="home.heroSecondary">Men bilan bog'lanish</a>
+            </div>
+
+            <div class="hero-metrics">
+              <article class="metric-card">
+                <span class="metric-number" data-count-key="projects">0</span>
+                <p data-i18n="metrics.projects">Jami loyihalar</p>
+              </article>
+              <article class="metric-card">
+                <span class="metric-number" data-count-key="categories">0</span>
+                <p data-i18n="metrics.categories">Loyiha kategoriyalari</p>
+              </article>
+              <article class="metric-card">
+                <span class="metric-number" data-count-key="featured">0</span>
+                <p data-i18n="metrics.featured">Tanlangan loyihalar</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="portrait-card">
+              <img src="/assets/images/perfil.png" alt="Portrait of Muxtorjon">
+            </div>
+
+            <div class="floating-panel">
+              <p class="floating-label" data-i18n="home.setupLabel">Hozirgi tuzilma</p>
+              <ul>
+                <li data-i18n="home.setupItem1">Portfolio bitta asosiy sahifada</li>
+                <li data-i18n="home.setupItem2">Loyihalar alohida sahifada</li>
+                <li data-i18n="home.setupItem3">Hammasi bitta CSS va JS fayl bilan ishlaydi</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="container section-heading reveal">
+          <p class="eyebrow" data-i18n="home.aboutEyebrow">Men haqimda</p>
+          <h2 data-i18n="home.aboutTitle">Sodda tuzilma, qulay yangilanish va toza navigatsiya.</h2>
+        </div>
+
+        <div class="container about-grid">
+          <div class="about-media reveal">
+            <img src="/assets/images/prefil.png" alt="Profile photo of Muxtorjon">
+          </div>
+
+          <div class="about-copy reveal">
+            <p data-i18n="home.aboutText1">
+              Bu tuzilma bilan portfolio va loyiha katalogi bir-biriga aralashmaydi. Siz portfolio dizaynini
+              alohida, loyihalar ro'yxatini esa alohida boshqarishingiz mumkin.
+            </p>
+            <p data-i18n="home.aboutText2">
+              Loyiha ma'lumotlari hamon <strong>data/projects.json</strong> ichida saqlanadi, shuning uchun yangi
+              ish qo'shish jarayoni osonligicha qoladi.
+            </p>
+
+            <div class="about-points">
+              <article>
+                <h3 data-i18n="home.aboutCard1Title">Toza portfolio</h3>
+                <p data-i18n="home.aboutCard1Text">Asosiy sahifa faqat sizni tanishtiradi.</p>
+              </article>
+              <article>
+                <h3 data-i18n="home.aboutCard2Title">Alohida loyihalar</h3>
+                <p data-i18n="home.aboutCard2Text">Barcha ishlar alohida sahifada ko'rsatiladi.</p>
+              </article>
+              <article>
+                <h3 data-i18n="home.aboutCard3Title">Oson tahrirlash</h3>
+                <p data-i18n="home.aboutCard3Text">Frontend hanuz asosiy 3 faylda boshqariladi.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section skills" id="skills">
+        <div class="container section-heading reveal">
+          <p class="eyebrow" data-i18n="home.skillsEyebrow">Ko'nikmalar</p>
+          <h2 data-i18n="home.skillsTitle">Ko'rsatilayotgan ishlar ortidagi vositalar va kuchli tomonlar.</h2>
+        </div>
+
+        <div class="container skills-grid">
+          <div class="skills-list reveal">
+            <article class="skill-item">
+              <div class="skill-head">
+                <span data-i18n="home.skillHtml">HTML va semantik tuzilma</span>
+                <strong>95%</strong>
+              </div>
+              <div class="skill-track"><span style="width: 95%;"></span></div>
+            </article>
+
+            <article class="skill-item">
+              <div class="skill-head">
+                <span data-i18n="home.skillCss">CSS va responsiv dizayn</span>
+                <strong>90%</strong>
+              </div>
+              <div class="skill-track"><span style="width: 90%;"></span></div>
+            </article>
+
+            <article class="skill-item">
+              <div class="skill-head">
+                <span data-i18n="home.skillJs">JavaScript interaktivliklari</span>
+                <strong>82%</strong>
+              </div>
+              <div class="skill-track"><span style="width: 82%;"></span></div>
+            </article>
+
+            <article class="skill-item">
+              <div class="skill-head">
+                <span data-i18n="home.skillNode">Node.js backend asoslari</span>
+                <strong>76%</strong>
+              </div>
+              <div class="skill-track"><span style="width: 76%;"></span></div>
+            </article>
+          </div>
+
+          <aside class="skills-card reveal">
+            <p class="skills-card__eyebrow" data-i18n="home.skillsCardEyebrow">Loyihalar sahifasi</p>
+            <h3 data-i18n="home.skillsCardTitle">Alohida loyihalar sahifasi qanday ishlaydi</h3>
+            <ul class="skills-bullets">
+              <li data-i18n="home.skillsCardItem1">Barcha loyihalar <strong>data/projects.json</strong> dan yuklanadi</li>
+              <li data-i18n="home.skillsCardItem2">Filter va qidiruv maxsus loyihalar sahifasida ishlaydi</li>
+              <li data-i18n="home.skillsCardItem3">Portfolio esa shaxsiy brending uchun toza qoladi</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section preview-section" id="projects-preview">
+        <div class="container">
+          <div class="preview-panel reveal">
+            <div>
+              <p class="eyebrow" data-i18n="home.previewEyebrow">Loyihalar sahifasi</p>
+              <h2 data-i18n="home.previewTitle">Loyihalar endi portfolio ichida emas, alohida sahifada turadi.</h2>
+              <p data-i18n="home.previewText">
+                Alohida sahifada barcha ishlaringizni filter, qidiruv va kartalar bilan ko'rish mumkin. Portfolio
+                esa toza va ixcham ko'rinishda qoladi.
+              </p>
+            </div>
+
+            <div class="preview-actions">
+              <a class="button button-primary" href="/projects.html" data-i18n="home.previewPrimary">Loyihalarga o'tish</a>
+              <a class="button button-secondary" href="#contact" data-i18n="home.previewSecondary">Sayt buyurtma qilish</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="container contact-grid">
+          <div class="contact-copy reveal">
+            <p class="eyebrow" data-i18n="home.contactEyebrow">Aloqa</p>
+            <h2 data-i18n="home.contactTitle">Loyiha tafsilotlarini portfolio sahifasining o'zidan yuboring.</h2>
+            <p data-i18n="home.contactText">
+              Agar Node backend ishlayotgan bo'lsa, bu forma xabarlarni saqlaydi. Agar ishlamasa ham sahifa statik
+              frontend sifatida ishlaydi va backend offline ekanini bildiradi.
+            </p>
+
+            <div class="contact-cards">
+              <a class="contact-card" href="https://github.com/sardorisarov209-tech" target="_blank" rel="noreferrer">
+                <span class="contact-card__title" data-i18n="home.contactGithub">GitHub</span>
+                <strong>sardorisarov209-tech</strong>
+              </a>
+              <div class="contact-card">
+                <span class="contact-card__title" data-i18n="home.contactProjectsPage">Loyihalar sahifasi</span>
+                <strong>/projects.html</strong>
+              </div>
+              <div class="contact-card">
+                <span class="contact-card__title" data-i18n="home.contactApiStatus">API holati</span>
+                <strong id="api-status">Checking...</strong>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" id="contact-form">
+            <label>
+              <span data-i18n="home.formName">Ism</span>
+              <input type="text" name="name" placeholder="Ismingiz va familiyangiz" data-i18n-placeholder="home.formNamePlaceholder" required>
+            </label>
+
+            <label>
+              <span data-i18n="home.formEmail">Email</span>
+              <input type="email" name="email" placeholder="you@example.com" data-i18n-placeholder="home.formEmailPlaceholder" required>
+            </label>
+
+            <label>
+              <span data-i18n="home.formProjectType">Loyiha turi</span>
+              <select name="projectType">
+                <option value="Portfolio website" data-i18n="home.formTypePortfolio">Portfolio sayti</option>
+                <option value="Landing page" data-i18n="home.formTypeLanding">Landing page</option>
+                <option value="Business site" data-i18n="home.formTypeBusiness">Biznes sayti</option>
+                <option value="Custom build" data-i18n="home.formTypeCustom">Maxsus loyiha</option>
+              </select>
+            </label>
+
+            <label>
+              <span data-i18n="home.formMessage">Xabar</span>
+              <textarea name="message" rows="6" placeholder="Sayt haqida, kerakli funksiyalar yoki muddat haqida yozing..." data-i18n-placeholder="home.formMessagePlaceholder" required></textarea>
+            </label>
+
+            <button class="button button-primary form-button" type="submit">
+              <span data-submit-label data-i18n="home.formSubmit">Xabar yuborish</span>
+            </button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>Muxtorjon.dev</p>
+        <p data-i18n="footer.files">Asosiy frontend fayllari: index.html, style.css, main.js</p>
+        <p>&copy; <span id="year"></span> <span data-i18n="footer.rights">Barcha huquqlar himoyalangan.</span></p>
+      </div>
+    </footer>
+  </body>
+</html>
