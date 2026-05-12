@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+
+body {
+  @apply bg-slate-950 text-slate-100;
+  background-image: radial-gradient(circle at 15% 15%, rgba(51, 144, 236, 0.2), transparent 30%), radial-gradient(circle at 80% 10%, rgba(76, 175, 255, 0.1), transparent 30%);
+}
+
+.glass {
+  @apply bg-slate-900/55 backdrop-blur-xl border border-white/10 shadow-glass;
+}
